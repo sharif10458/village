@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rural Bangla Beuaty</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+
+
+    <style>
+        @keyframes borderRotate {
+            0% {
+                background-position: 0% 50%;
+            }
+            50% {
+                background-position: 100% 50%;
+            }
+            100% {
+                background-position: 0% 50%;
+            }
+        }
+
+        .animated-border {
+            position: relative;
+            background: white;
+        }
+
+        .animated-border::before {
+            content: '';
+            position: absolute;
+            top: -1.5px;
+            left: -1.5px;
+            right: -1.5px;
+            bottom: -1.5px;
+            background: linear-gradient(90deg, #2563EB, #DC2626, #059669, #F59E0B, #2563EB, #DC2626);
+            background-size: 300% 300%;
+            border-radius: inherit;
+            z-index: -1;
+            animation: borderRotate 3.5s linear infinite;
+        }
+    </style>
+</head>
+<body class="bg-gradient-to-br from-green-50 via-blue-50 to-yellow-50 min-h-screen p-3 md:p-5">
+    <!-- Navbar Container -->
+    <div class="max-w-[92%] mx-auto relative">
+        <nav class="animated-border rounded-xl shadow-xl">
+            <div class="bg-white/95 backdrop-blur-sm rounded-xl px-3 md:px-5 py-3">
+                <div class="flex items-center justify-between">
+                    <!-- Logo and Title -->
+                    <div class="flex items-center space-x-2.5">
+                        <!-- Logo Placeholder -->
+                        
+<!-- Logo -->
+<div class="w-10 h-10 bg-gradient-to-br from-emerald-400 via-green-400 to-lime-400 rounded-full flex items-center justify-center p-0.5 shadow-lg">
+    <img src="photo/WhatsApp Image 2025-10-25 at 15.15.59_219bc06d.jpg" alt="লোগো" class="w-full h-full rounded-full object-cover">
+</div>
+
+                        <!-- Three Word Title (Hidden on mobile, shown on larger screens) -->
+                        <div class="hidden md:flex items-center space-x-1.5 text-lg font-bold">
+                            <span class="text-emerald-600"> Rural </span>
+                            <span class="text-blue-600">Bangla </span>
+                            <span class="text-rose-600">Beuaty</span>
+                        </div>
+                    </div>
+
+                    <!-- Mobile Title (Centered on mobile) -->
+                    <div class="md:hidden absolute left-1/2 transform -translate-x-1/2 flex items-center space-x-1.5 text-base font-bold">
+                        <span class="text-emerald-600">Rural</span>
+                        <span class="text-blue-600">Bangla</span>
+                        <span class="text-rose-600">Beuaty</span>
+                    </div>
+
+                    <!-- Hamburger Menu Button -->
+                    <button id="menuBtn" class="flex flex-col justify-center items-center w-9 h-9 space-y-1.5 hover:bg-gradient-to-br hover:from-green-50 hover:to-blue-50 rounded-lg transition-all z-50">
+                        <span class="w-5 h-0.5 bg-gradient-to-r from-emerald-600 to-blue-600 transition-all rounded-full"></span>
+                        <span class="w-5 h-0.5 bg-gradient-to-r from-blue-600 to-rose-600 transition-all rounded-full"></span>
+                        <span class="w-5 h-0.5 bg-gradient-to-r from-rose-600 to-amber-600 transition-all rounded-full"></span>
+                    </button>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Dropdown Menu -->
+        <div id="dropdownMenu" class="hidden absolute right-0 mt-2 w-56 bg-white/95 backdrop-blur-md rounded-xl shadow-2xl overflow-hidden z-50 border-2 border-gradient-to-br from-emerald-200 to-blue-200">
+            <div class="py-1.5">
+                <a href="index.html" class="block px-5 py-2.5 text-gray-800 bg-gradient-to-r from-emerald-50 to-green-50 font-semibold border-l-4 border-emerald-500">Home</a>
+
+
+                <a href="a-1.html" class="block px-5 py-2.5 text-gray-700 hover:bg-gradient-to-r hover:from-blue-50 hover:to-cyan-50 hover:text-blue-700 transition-all font-medium hover:border-l-4 hover:border-blue-500">Boishakh-Joishtho</a>
+
+ 
+
+<a href="b-2.html" class="block px-5 py-2.5 text-gray-700 hover:bg-gradient-to-r hover:from-green-50 hover:to-emerald-50 hover:text-green-700 transition-all font-medium hover:border-l-4 hover:border-green-500">Ashar-Srabon</a>
+
+                 
+                <a href="c-3.html" class="block px-5 py-2.5 text-gray-700 hover:bg-gradient-to-r hover:from-purple-50 hover:to-pink-50 hover:text-purple-700 transition-all font-medium hover:border-l-4 hover:border-purple-500">Bhadro-Ashwin</a>
+                
+<a href="d-4.html" class="block px-5 py-2.5 text-gray-700 hover:bg-gradient-to-r hover:from-amber-50 hover:to-orange-50 hover:text-amber-700 transition-all font-medium hover:border-l-4 hover:border-amber-500">Kartik-Ogrohayon</a>
+
+        
+
+                <a href="e-5.html" class="block px-5 py-2.5 text-gray-700 hover:bg-gradient-to-r hover:from-green-50 hover:to-emerald-50 hover:text-green-700 transition-all font-medium hover:border-l-4 hover:border-green-500">Poush-Magh</a>
+
+                <a href="f-6.html" class="block px-5 py-2.5 text-gray-700 hover:bg-gradient-to-r hover:from-amber-50 hover:to-orange-50 hover:text-amber-700 transition-all font-medium hover:border-l-4 hover:border-amber-500">Falgun-Chaitra</a>
+            </div>
+        </div>
+    </div>
+
+
+<!-- Menu Content Page -->
+<div class="max-w-[92%] mx-auto mt-8 mb-16 px-4 overflow-x-hidden">
+    
+    <!-- Header Section -->
+    <div class="text-center mb-12">
+        <h2 class="text-4xl font-bold text-gray-900 mb-4" style="font-family: 'Georgia', 'Times New Roman', serif;">Boishakh & Joishtho – The Heart of the Bengali Summer</h2>
+        <p class="text-gray-500 text-lg max-w-2xl mx-auto" style="font-family: 'Arial', sans-serif;">
+    Boishakh and Joishtho together mark the true spirit of the Bengali summer — months of blazing sun, golden harvests, sweet fruits, and vibrant traditions. They symbolize both hardship and abundance, when nature burns with heat yet offers life in its richest form.
+
+    <p class="text-center text-lg font-semibold mt-6">
+  Take a look at some features of these two months ↓
+</p>
+
+
+        </p>
+    </div>
+
+    <!-- Accordion Cards Section -->
+    <div class="max-w-6xl mx-auto mb-16 grid grid-cols-1 lg:grid-cols-2 gap-4">
+        
+        <!-- Card 1 -->
+        <div class="bg-white border border-gray-300 rounded-lg overflow-hidden transition-all duration-300" id="card1">
+            <div class="flex items-center justify-between p-4 cursor-pointer" onclick="toggleCard('card1', 'content1')">
+                <h3 class="text-lg font-semibold text-gray-800" style="font-family: 'Georgia', serif;">1. The Call of the New Year</h3>
+                <span class="text-2xl text-gray-600" id="icon1">+</span>
+            </div>
+            <div class="hidden px-4 pb-4" id="content1">
+                <p class="text-gray-600 leading-relaxed" style="font-family: 'Arial', sans-serif;">
+                    As Boishakh arrives, the Bengali calendar renews. The air fills with celebration — songs, fairs, and cheerful greetings. Homes are cleaned, hearts refreshed, and people embrace the promise of new beginnings with hope and joy.
+                </p>
+            </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="bg-white border border-gray-300 rounded-lg overflow-hidden transition-all duration-300" id="card2">
+            <div class="flex items-center justify-between p-4 cursor-pointer" onclick="toggleCard('card2', 'content2')">
+                <h3 class="text-lg font-semibold text-gray-800" style="font-family: 'Georgia', serif;">  2. Nature’s Transformation</h3>
+                <span class="text-2xl text-gray-600" id="icon2">+</span>
+            </div>
+            <div class="hidden px-4 pb-4" id="content2">
+                <p class="text-gray-600 leading-relaxed" style="font-family: 'Arial', sans-serif;">
+                 
+
+Across the countryside, trees burst with color and new life. Palash, Krishnachura, and Shimul trees paint the land in red and orange, while the first drops of summer rain cool the dusty earth, filling the air with a sweet, earthy fragrance.
+                </p>
+            </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="bg-white border border-gray-300 rounded-lg overflow-hidden transition-all duration-300" id="card3">
+            <div class="flex items-center justify-between p-4 cursor-pointer" onclick="toggleCard('card3', 'content3')">
+                <h3 class="text-lg font-semibold text-gray-800" style="font-family: 'Georgia', serif;"> 3. Fruits of the Season</h3>
+                <span class="text-2xl text-gray-600" id="icon3">+</span>
+            </div>
+            <div class="hidden px-4 pb-4" id="content3">
+                <p class="text-gray-600 leading-relaxed" style="font-family: 'Arial', sans-serif;">
+                  
+
+Joishtho brings the season’s sweetest blessings — mangoes, jackfruits, litchis, and blackberries ripen under the strong summer sun. Markets overflow with color and aroma, turning every meal into a celebration of freshness.
+                </p>
+            </div>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="bg-white border border-gray-300 rounded-lg overflow-hidden transition-all duration-300" id="card4">
+            <div class="flex items-center justify-between p-4 cursor-pointer" onclick="toggleCard('card4', 'content4')">
+                <h3 class="text-lg font-semibold text-gray-800" style="font-family: 'Georgia', serif;">  4. The Heat and the Storms</h3>
+                <span class="text-2xl text-gray-600" id="icon4">+</span>
+            </div>
+            <div class="hidden px-4 pb-4" id="content4">
+                <p class="text-gray-600 leading-relaxed" style="font-family: 'Arial', sans-serif;">
+                  
+
+The days are hot and bright, yet sudden Kalboishakhi storms rush through the plains with thunder and rain. Lightning splits the sky, winds roar through the trees, and for a brief moment, the world feels alive again.
+                </p>
+            </div>
+        </div>
+
+        <!-- Card 5 -->
+        <div class="bg-white border border-gray-300 rounded-lg overflow-hidden transition-all duration-300" id="card5">
+            <div class="flex items-center justify-between p-4 cursor-pointer" onclick="toggleCard('card5', 'content5')">
+                <h3 class="text-lg font-semibold text-gray-800" style="font-family: 'Georgia', serif;">  5. Life in the Villages</h3>
+                <span class="text-2xl text-gray-600" id="icon5">+</span>
+            </div>
+            <div class="hidden px-4 pb-4" id="content5">
+                <p class="text-gray-600 leading-relaxed" style="font-family: 'Arial', sans-serif;">
+                
+
+In rural Bengal, life beats in rhythm with the season. Farmers work under the fierce sun, children play around fruit trees, and families rest beneath shady groves. The sound of distant thunder carries both fear and comfort — a reminder of nature’s balance.
+                </p>
+            </div>
+        </div>
+
+        <!-- Card 6 -->
+        <div class="bg-white border border-gray-300 rounded-lg overflow-hidden transition-all duration-300" id="card6">
+            <div class="flex items-center justify-between p-4 cursor-pointer" onclick="toggleCard('card6', 'content6')">
+                <h3 class="text-lg font-semibold text-gray-800" style="font-family: 'Georgia', serif;">6. The Spirit of Resilience</h3>
+                <span class="text-2xl text-gray-600" id="icon6">+</span>
+            </div>
+            <div class="hidden px-4 pb-4" id="content6">
+                <p class="text-gray-600 leading-relaxed" style="font-family: 'Arial', sans-serif;">
+                    
+
+Together, Boishakh and Joishtho teach endurance and renewal. The heat tests patience, the storms remind of fragility, yet the fruits and festivals renew strength. These months reflect the Bengali soul — enduring, vibrant, and forever full of life.
+                </p>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Photo Gallery Section -->
+    <div class="mb-16">
+        <h3 class="text-3xl font-bold text-center text-gray-900 mb-8" style="font-family: 'Georgia', serif;">Photo Gallery</h3>
+        <div class="grid grid-cols-2 gap-4 max-w-4xl mx-auto">
+            <div class="rounded-lg overflow-hidden border-2 border-gray-300 shadow-md hover:shadow-xl transition-shadow">
+                <img src="photo1.jpg" alt="Photo 1" class="w-full h-64 object-cover">
+            </div>
+            <div class="rounded-lg overflow-hidden border-2 border-gray-300 shadow-md hover:shadow-xl transition-shadow">
+                <img src="photo2.jpg" alt="Photo 2" class="w-full h-64 object-cover">
+            </div>
+        </div>
+    </div>
+
+    <!-- Video Gallery Section -->
+    <div class="mb-16">
+        <h3 class="text-3xl font-bold text-center text-gray-900 mb-8" style="font-family: 'Georgia', serif;">Video Gallery</h3>
+        <div class="grid grid-cols-2 gap-4 max-w-4xl mx-auto mb-6">
+            <div class="rounded-lg overflow-hidden border-2 border-gray-300 shadow-md">
+                <video controls class="w-full h-64">
+                    <source src="video1.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+            <div class="rounded-lg overflow-hidden border-2 border-gray-300 shadow-md">
+                <video controls class="w-full h-64">
+                    <source src="video2.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+        </div>
+    </div>
+
+    <!-- YouTube Videos Section -->
+    <div class="mb-16">
+        <h3 class="text-3xl font-bold text-center text-gray-900 mb-8" style="font-family: 'Georgia', serif;">Featured Videos</h3>
+        <div class="grid grid-cols-2 gap-4 max-w-4xl mx-auto">
+            <!-- YouTube Video 1 - এখানে iframe এর src এ YouTube video link বসান -->
+            <div class="rounded-lg overflow-hidden border-2 border-gray-300 shadow-md">
+                <iframe class="w-full h-64" src="https://www.youtube.com/embed/YOUR_VIDEO_ID_1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            <!-- YouTube Video 2 - এখানে iframe এর src এ YouTube video link বসান -->
+            <div class="rounded-lg overflow-hidden border-2 border-gray-300 shadow-md">
+                <iframe class="w-full h-64" src="https://www.youtube.com/embed/YOUR_VIDEO_ID_2" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </div>
+    </div>
+
+    <!-- Website Link Section -->
+    <div class="max-w-2xl mx-auto text-center">
+        <div class="bg-gradient-to-r from-emerald-500 via-blue-500 to-purple-500 p-1 rounded-2xl shadow-2xl hover:shadow-3xl transition-all duration-300 transform hover:scale-105">
+            <div class="bg-white rounded-xl p-8">
+                <h3 class="text-2xl font-bold text-gray-900 mb-4" style="font-family: 'Georgia', serif;">Visit Our Main Website</h3>
+                <a href="https://your-website-link.com" target="_blank" class="inline-block bg-gradient-to-r from-emerald-600 to-blue-600 text-white font-semibold px-8 py-3 rounded-lg hover:from-emerald-700 hover:to-blue-700 transition-all duration-300 shadow-lg" style="font-family: 'Arial', sans-serif;">
+                    Explore More →
+                </a>
+            </div>
+        </div>
+    </div>
+
+</div>
+    
+</body>
+
+<script src="js/main.js"></script>

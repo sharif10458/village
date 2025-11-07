@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rural Bangla Beuaty</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+
+
+    <style>
+        @keyframes borderRotate {
+            0% {
+                background-position: 0% 50%;
+            }
+            50% {
+                background-position: 100% 50%;
+            }
+            100% {
+                background-position: 0% 50%;
+            }
+        }
+
+        .animated-border {
+            position: relative;
+            background: white;
+        }
+
+        .animated-border::before {
+            content: '';
+            position: absolute;
+            top: -1.5px;
+            left: -1.5px;
+            right: -1.5px;
+            bottom: -1.5px;
+            background: linear-gradient(90deg, #2563EB, #DC2626, #059669, #F59E0B, #2563EB, #DC2626);
+            background-size: 300% 300%;
+            border-radius: inherit;
+            z-index: -1;
+            animation: borderRotate 3.5s linear infinite;
+        }
+
+.line-clamp-2 {
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.expanded {
+    display: block;
+    max-height: 300px;
+    overflow-y: auto;
+}
+
+    </style>
+</head>
+
+
+
+<body class="bg-gradient-to-br from-green-50 via-blue-50 to-yellow-50 min-h-screen p-3 md:p-5">
+    <!-- Navbar Container -->
+    <div class="max-w-[92%] mx-auto relative">
+        <nav class="animated-border rounded-xl shadow-xl">
+            <div class="bg-white/95 backdrop-blur-sm rounded-xl px-3 md:px-5 py-3">
+                <div class="flex items-center justify-between">
+                    <!-- Logo and Title -->
+                    <div class="flex items-center space-x-2.5">
+                        <!-- Logo Placeholder -->
+                        
+<!-- Logo -->
+<div class="w-10 h-10 bg-gradient-to-br from-emerald-400 via-green-400 to-lime-400 rounded-full flex items-center justify-center p-0.5 shadow-lg">
+    <img src="photo/WhatsApp Image 2025-10-25 at 15.15.59_219bc06d.jpg" alt="লোগো" class="w-full h-full rounded-full object-cover">
+</div>
+
+                        <!-- Three Word Title (Hidden on mobile, shown on larger screens) -->
+                        <div class="hidden md:flex items-center space-x-1.5 text-lg font-bold">
+                            <span class="text-emerald-600"> Rural </span>
+                            <span class="text-blue-600">Bangla </span>
+                            <span class="text-rose-600">Beuaty</span>
+                        </div>
+                    </div>
+
+                    <!-- Mobile Title (Centered on mobile) -->
+                    <div class="md:hidden absolute left-1/2 transform -translate-x-1/2 flex items-center space-x-1.5 text-base font-bold">
+                        <span class="text-emerald-600">Rural</span>
+                        <span class="text-blue-600">Bangla</span>
+                        <span class="text-rose-600">Beuaty</span>
+                    </div>
+
+                    <!-- Hamburger Menu Button -->
+                    <button id="menuBtn" class="flex flex-col justify-center items-center w-9 h-9 space-y-1.5 hover:bg-gradient-to-br hover:from-green-50 hover:to-blue-50 rounded-lg transition-all z-50">
+                        <span class="w-5 h-0.5 bg-gradient-to-r from-emerald-600 to-blue-600 transition-all rounded-full"></span>
+                        <span class="w-5 h-0.5 bg-gradient-to-r from-blue-600 to-rose-600 transition-all rounded-full"></span>
+                        <span class="w-5 h-0.5 bg-gradient-to-r from-rose-600 to-amber-600 transition-all rounded-full"></span>
+                    </button>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Dropdown Menu -->
+        <div id="dropdownMenu" class="hidden absolute right-0 mt-2 w-56 bg-white/95 backdrop-blur-md rounded-xl shadow-2xl overflow-hidden z-50 border-2 border-gradient-to-br from-emerald-200 to-blue-200">
+            <div class="py-1.5">
+                <a href="index.html" class="block px-5 py-2.5 text-gray-800 bg-gradient-to-r from-emerald-50 to-green-50 font-semibold border-l-4 border-emerald-500">Home</a>
+
+
+                <a href="a-1.html" class="block px-5 py-2.5 text-gray-700 hover:bg-gradient-to-r hover:from-blue-50 hover:to-cyan-50 hover:text-blue-700 transition-all font-medium hover:border-l-4 hover:border-blue-500">Boishakh-Joishtho</a>
+
+ 
+
+<a href="b-2.html" class="block px-5 py-2.5 text-gray-700 hover:bg-gradient-to-r hover:from-green-50 hover:to-emerald-50 hover:text-green-700 transition-all font-medium hover:border-l-4 hover:border-green-500">Ashar-Srabon</a>
+
+                 
+                <a href="c-3.html" class="block px-5 py-2.5 text-gray-700 hover:bg-gradient-to-r hover:from-purple-50 hover:to-pink-50 hover:text-purple-700 transition-all font-medium hover:border-l-4 hover:border-purple-500">Bhadro-Ashwin</a>
+                
+<a href="d-4.html" class="block px-5 py-2.5 text-gray-700 hover:bg-gradient-to-r hover:from-amber-50 hover:to-orange-50 hover:text-amber-700 transition-all font-medium hover:border-l-4 hover:border-amber-500">Kartik-Ogrohayon</a>
+
+        
+
+                <a href="e-5.html" class="block px-5 py-2.5 text-gray-700 hover:bg-gradient-to-r hover:from-green-50 hover:to-emerald-50 hover:text-green-700 transition-all font-medium hover:border-l-4 hover:border-green-500">Poush-Magh</a>
+
+                <a href="f-6.html" class="block px-5 py-2.5 text-gray-700 hover:bg-gradient-to-r hover:from-amber-50 hover:to-orange-50 hover:text-amber-700 transition-all font-medium hover:border-l-4 hover:border-amber-500">Falgun-Chaitra</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Page Content -->
+  
+
+<!-- Content Section -->
+<div class="max-w-[92%] mx-auto mt-8">
+    <div class="bg-gradient-to-br from-white via-gray-100 to-amber-50 backdrop-blur-sm rounded-2xl shadow-xl p-8 h-[280px] overflow-y-auto">
+        <h2 class="text-3xl font-bold text-center mb-4 bg-gradient-to-r from-emerald-600 via-blue-600 to-rose-600 bg-clip-text text-transparent">Essence of Bengal</h2>
+        
+        <div class="space-y-4">
+            <div>
+                <h4 id="heading1" class="text-lg font-semibold text-emerald-700 mb-1"></h4>
+                <p id="para1" class="text-gray-700 text-base leading-relaxed"></p>
+            </div>
+            
+            <div>
+                <h4 id="heading2" class="text-lg font-semibold text-blue-700 mb-1"></h4>
+                <p id="para2" class="text-gray-700 text-base leading-relaxed"></p>
+            </div>
+
+              
+            
+            <div>
+                <h4 id="heading3" class="text-lg font-semibold text-rose-700 mb-1"></h4>
+                <p id="para3" class="text-gray-700 text-base leading-relaxed"></p>
+            </div>
+            
+            <div>
+                <h4 id="heading4" class="text-lg font-semibold text-purple-700 mb-1"></h4>
+                <p id="para4" class="text-gray-700 text-base leading-relaxed"></p>
+            </div>
+            
+            <div>
+                <h4 id="heading5" class="text-lg font-semibold text-teal-700 mb-1"></h4>
+                <p id="para5" class="text-gray-700 text-base leading-relaxed"></p>
+            </div>
+            
+            <div>
+                <h4 id="heading6" class="text-lg font-semibold text-amber-700 mb-1"></h4>
+                <p id="para6" class="text-gray-700 text-base leading-relaxed"></p>
+            </div>
+
+  <div>
+               <div>
+                <h4 id="heading7" class="text-lg font-semibold text-rose-700 mb-1"></h4>
+                <p id="para7" class="text-gray-700 text-base leading-relaxed"></p>
+            </div>
+            
+
+        </div>
+    </div>
+</div>
+
+<!-- part2 -->
+
+
+
+<!-- Background Image Section -->
+
+
+<div class="text-center mb-12 mt-6">
+        <h2 class="text-4xl font-bold text-gray-900 mb-4" style="font-family: 'Georgia', 'Times New Roman', serif;">The Beauty of Rural Bengal</h2>
+        <p class="text-gray-500 text-lg max-w-6xl mx-auto" style="font-family: 'Arial', sans-serif;">
+   Step into the heart of rural Bengal — where golden fields, serene rivers, and simple village life paint a timeless story of harmony and beauty. Through pictures, videos, and stories, we bring you closer to the soul of the countryside — its people, nature, and traditions.
+    <p class="text-center text-lg font-semibold mt-6">
+  Stay with us to explore more!😊 <br>↓
+</p>
+
+
+        </p>
+    </div>
+
+
+<!-- Background Image Section -->
+<section class="max-w-[100%] mx-auto mt-8 bg-cover bg-center bg-no-repeat rounded-2xl overflow-hidden min-h-screen " style="background-image: url('');">
+    <div class="p-4">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            
+            <!-- Card 1 -->
+            <div class="bg-gradient-to-br from-white to-amber-50 backdrop-blur-md rounded-2xl shadow-2xl overflow-hidden transform transition-all duration-300 hover:-translate-y-2 hover:shadow-3xl border border-gray-200">
+                <div class="p-3">
+                    <div class="w-full h-48 rounded-xl overflow-hidden">
+                        <img src="photo/1.jpg" alt="ছবি ১" class="w-full h-full object-cover w-full h-full object-cover card-image">
+                    </div>
+                </div>
+                <div class="px-5 pb-5">
+                    <h3 class="text-xl font-bold text-gray-800 mb-2">  A Verdant Isle of Serenity</h3>
+                    <div class="relative">
+                        <p class="text-gray-700 text-sm leading-relaxed transition-all duration-300" id="text1">
+                          This high-angle shot captures a vision of pastoral perfection under a luminous blue sky. A narrow canal, reflecting the clear heavens, elegantly bisects the landscape, flanked by a vibrant avenue of stately palm trees and a lush, uninterrupted expanse of bright green rice fields. Nestled close to the water’s edge is a charming, isolated thatched hut, the very picture of rustic simplicity and peace. The dense, deep green foliage of a large tree provides a cooling counterpoint to the bright fields. A small flock of birds punctuates the sky, adding a sense of movement to the tranquility. This image is an ode to the vibrant, life-giving green of the tropics, painting a picture of an idyllic, sun-drenched retreat far removed from the bustle of the modern world.
+
+                        </p>
+                        <button onclick="toggleText('text1', 'btn1')" id="btn1" class="mt-2 text-emerald-600 hover:text-emerald-700 font-semibold flex items-center gap-1 transition-colors">
+                            <span class="text-lg">+</span> See More
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="bg-gradient-to-br from-white to-amber-50 backdrop-blur-md rounded-2xl shadow-2xl overflow-hidden transform transition-all duration-300 hover:-translate-y-2 hover:shadow-3xl border border-gray-200">
+                <div class="p-3">
+                    <div class="w-full h-48 rounded-xl overflow-hidden">
+                        <img src="photo/2.jpg" alt="ছবি ২" class="w-full h-full object-cover  w-full h-full object-cover card-image">
+                    </div>
+                </div>
+                <div class="px-5 pb-5">
+                    <h3 class="text-xl font-bold text-gray-800 mb-2">Nocturne of the Harvest Moon</h3>
+                    <div class="relative">
+                        <p class="text-gray-700 text-sm leading-relaxed transition-all duration-300" id="text2">
+                            A magical night scene transforms the humble rural dwelling into a beacon of warmth and enchantment. Under a vast, dark sky peppered with a dazzling array of stars, the full moon casts a soft, celestial glow. The thatched-roof hut is warmly lit from within, and a crackling campfire outside creates an intimate, glowing centerpiece where a lone buffalo stands calmly. A magnificent tree adorned with vibrant, rosy-pink blossoms adds a stunning burst of color to the nocturnal palette. The path leading away disappears into the tranquil, moonlit rice paddies. This photograph captures a moment of sublime quietude and peaceful coexistence between man, animal, and the cosmic wonder of the night sky, transforming the rural scene into a landscape of dreams.
+                        </p>
+                        <button onclick="toggleText('text2', 'btn2')" id="btn2" class="mt-2 text-blue-600 hover:text-blue-700 font-semibold flex items-center gap-1 transition-colors">
+                            <span class="text-lg">+</span> See More
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="bg-gradient-to-br from-white to-amber-50 backdrop-blur-md rounded-2xl shadow-2xl overflow-hidden transform transition-all duration-300 hover:-translate-y-2 hover:shadow-3xl border border-gray-200">
+                <div class="p-3">
+                    <div class="w-full h-48 rounded-xl overflow-hidden">
+                        <img src="photo/3.jpg" alt="ছবি ৩" class="w-full h-full object-cover  w-full h-full object-cover card-image">
+                    </div>
+                </div>
+                <div class="px-5 pb-5">
+                    <h3 class="text-xl font-bold text-gray-800 mb-2">The Rustic Dream in Golden Light</h3>
+                    <div class="relative">
+                        <p class="text-gray-700 text-sm leading-relaxed transition-all duration-300" id="text3">
+                         This aerial perspective captures a picturesque scene steeped in tranquility, where a humble thatched-roof cottage is perfectly framed by nature's artistry. A winding waterway and a narrow dirt path lead to the dwelling, which is beautifully flanked by tropical palm trees. The eye is drawn to two magnificent flowering trees: one a brilliant, sunny yellow, the other a striking, deep purple—a visual explosion of complementary colors. Beyond the home, vast expanses of golden-hued rice fields radiate under the warm glow of the setting sun, which bathes the entire scene in a soft, ethereal light. The composition speaks of a peaceful, self-contained existence, a vibrant sanctuary where the rhythms of farming life blend seamlessly with the lush, abundant beauty of the tropics.
+                        </p>
+                        <button onclick="toggleText('text3', 'btn3')" id="btn3" class="mt-2 text-rose-600 hover:text-rose-700 font-semibold flex items-center gap-1 transition-colors">
+                            <span class="text-lg">+</span> See More
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+<div class="p-4">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            
+            <!-- Card 1 -->
+            <div class="bg-gradient-to-br from-white to-amber-50 backdrop-blur-md rounded-2xl shadow-2xl overflow-hidden transform transition-all duration-300 hover:-translate-y-2 hover:shadow-3xl border border-gray-200">
+                <div class="p-3">
+                    <div class="w-full h-48 rounded-xl overflow-hidden">
+                        <img src="photo/4.jpg" alt="ছবি ১" class="w-full h-full object-cover  w-full h-full object-cover card-image">
+                    </div>
+                </div>
+                <div class="px-5 pb-5">
+                    <h3 class="text-xl font-bold text-gray-800 mb-2">The Architect's Flight of Skill</h3>
+                    <div class="relative">
+                        <p class="text-gray-700 text-sm leading-relaxed transition-all duration-300" id="text4">
+                         A mesmerizing portrait of avian architecture and industry is showcased against a brilliant, cloudless blue sky. Three Baya Weavers, known as the 'Babui Pakhi' in the local tongue, are captured mid-flight or clinging to their extraordinary, intricately woven nests. These flask-shaped, hanging structures, masterpieces of natural engineering, dangle from the foliage, symbolizing immense patience and skill. The small, golden-brown birds with their industrious energy are perfectly frozen in motion, wings outstretched, adding a dynamic quality to the serene backdrop. This photograph celebrates the wonder of instinctual craftsmanship and the delicate, yet determined, cycle of life and creation in the natural world, highlighting the sheer dedication required to build such a secure and intricate home.
+                        </p>
+                        <button onclick="toggleText('text4', 'btn4')" id="btn4" class="mt-2 text-emerald-600 hover:text-emerald-700 font-semibold flex items-center gap-1 transition-colors">
+                            <span class="text-lg">+</span> See More
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="bg-gradient-to-br from-white to-amber-50 backdrop-blur-md rounded-2xl shadow-2xl overflow-hidden transform transition-all duration-300 hover:-translate-y-2 hover:shadow-3xl border border-gray-200">
+                <div class="p-3">
+                    <div class="w-full h-48 rounded-xl overflow-hidden">
+                        <img src="photo/5.jpg" alt="ছবি ২" class="w-full h-full object-cover  w-full h-full object-cover card-image">
+                    </div>
+                </div>
+                <div class="px-5 pb-5">
+                    <h3 class="text-xl font-bold text-gray-800 mb-2">A Symphony of Simple Joys</h3>
+                    <div class="relative">
+                        <p class="text-gray-700 text-sm leading-relaxed transition-all duration-300" id="text5">
+                           This evocative image captures a slice of unspoiled rural life, where the river is both a road and a playground. Two children navigate a weathered wooden boat, their youthful energy splashing the placid water. The older child's face is radiant with a genuine smile, a testament to the uncomplicated happiness found in nature's embrace. With a small goat as their companion, they embody a daily ritual of passage, their simple vessel carrying them across the glistening expanse. The low sun casts a gentle, warm light on the scene, turning the ripples into fluid gold. This photograph is a poignant reminder of resilience and the pure, unburdened spirit of childhood, where every journey is an adventure and every moment is alive with possibility. The simple act of rowing becomes a beautiful, timeless dance with the flowing water.
+                        </p>
+                        <button onclick="toggleText('text5', 'btn5')" id="btn5" class="mt-2 text-blue-600 hover:text-blue-700 font-semibold flex items-center gap-1 transition-colors">
+                            <span class="text-lg">+</span> See More
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="bg-gradient-to-br from-white to-amber-50 backdrop-blur-md rounded-2xl shadow-2xl overflow-hidden transform transition-all duration-300 hover:-translate-y-2 hover:shadow-3xl border border-gray-200">
+                <div class="p-3">
+                    <div class="w-full h-48 rounded-xl overflow-hidden">
+                        <img src="photo/6.jpg" alt="ছবি ৩" class="w-full h-full object-cover  w-full h-full object-cover card-image">
+                    </div>
+                </div>
+                <div class="px-5 pb-5">
+                    <h3 class="text-xl font-bold text-gray-800 mb-2">Wings Over the Golden Tapestry</h3>
+                    <div class="relative">
+                        <p class="text-gray-700 text-sm leading-relaxed transition-all duration-300" id="text6">
+                        An arresting sight of natural grandeur unfolds over a meticulously cultivated landscape. The vibrant, almost incandescent yellow of the mustard fields stretches to the horizon, sharply contrasting with the deep emerald green of the adjacent paddies, creating a breathtaking quilt of color. Above this rich tapestry, a large flock of majestic birds soars in a synchronized ballet, their dark silhouettes cutting through the bright, airy sky. Their collective flight is a powerful symbol of freedom and the dynamic energy of nature. The image encapsulates the profound fertility of the land and the harmony between agriculture and wildlife, with the flight path suggesting an eternal, migratory cycle. It’s a powerful visual poem celebrating the sheer abundance and dramatic beauty of the rural countryside.
+                        </p>
+                        <button onclick="toggleText('text6', 'btn6')" id="btn6" class="mt-2 text-rose-600 hover:text-rose-700 font-semibold flex items-center gap-1 transition-colors">
+                            <span class="text-lg">+</span> See More
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+     <div class="p-4">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            
+            <!-- Card 1 -->
+            <div class="bg-gradient-to-br from-white to-amber-50 backdrop-blur-md rounded-2xl shadow-2xl overflow-hidden transform transition-all duration-300 hover:-translate-y-2 hover:shadow-3xl border border-gray-200">
+                <div class="p-3">
+                    <div class="w-full h-48 rounded-xl overflow-hidden">
+                        <img src="photo/7.jpg" alt="ছবি ১" class="w-full h-full object-cover  w-full h-full object-cover card-image">
+                    </div>
+                </div>
+                <div class="px-5 pb-5">
+                    <h3 class="text-xl font-bold text-gray-800 mb-2">Twilight's Fiery Embrace on the Water</h3>
+                    <div class="relative">
+                        <p class="text-gray-700 text-sm leading-relaxed transition-all duration-300" id="text7">
+                           The sky is set ablaze in a magnificent display of orange and gold as the sun dips dramatically toward the horizon, casting a powerful, warm glow across the wide expanse of the river. The water mirrors the fiery sky, creating a breathtaking canvas of light and reflection. Several traditional wooden boats are drawn up near the shore, their dark, strong silhouettes forming a striking contrast against the intense brilliance. They stand as silent sentinels, perhaps waiting for the night's fishing or having just completed the day's journey. The air is thick with the serene beauty of the evening close, a time for rest and reflection, underscoring the enduring relationship between the river, the boats, and the people who live by its ebb and flow.
+                        </p>
+                        <button onclick="toggleText('text7', 'btn7')" id="btn7" class="mt-2 text-emerald-600 hover:text-emerald-700 font-semibold flex items-center gap-1 transition-colors">
+                            <span class="text-lg">+</span> See More
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="bg-gradient-to-br from-white to-amber-50 backdrop-blur-md rounded-2xl shadow-2xl overflow-hidden transform transition-all duration-300 hover:-translate-y-2 hover:shadow-3xl border border-gray-200">
+                <div class="p-3">
+                    <div class="w-full h-48 rounded-xl overflow-hidden">
+                        <img src="photo/8.jpg" alt="ছবি ২" class="w-full h-full object-cover  w-full h-full object-cover card-image">
+                    </div>
+                </div>
+                <div class="px-5 pb-5">
+                    <h3 class="text-xl font-bold text-gray-800 mb-2">Silhouettes Against the Ember Sky</h3>
+                    <div class="relative">
+                        <p class="text-gray-700 text-sm leading-relaxed transition-all duration-300" id="text8">
+                            The close of day is marked by a dramatic and vivid spectacle as the sun dips below the horizon, painting the sky in fiery oranges, deep reds, and fading violets. The intense light of the setting sun creates a stunning backdrop against which a collection of trees—most prominently, tall, leaning palm trees and a distinctive date palm—are cast into sharp, elegant silhouettes. Their fronds create a beautiful, jagged pattern against the luminous sky. The foreground is dark and mysterious, emphasizing the brilliant, fading light above. This image captures a moment of intense transition and profound beauty, a powerful visual study in contrast where the bold forms of the trees stand in silent homage to the grandeur of the tropical sunset.
+                        </p>
+                        <button onclick="toggleText('text8', 'btn8')" id="btn8" class="mt-2 text-blue-600 hover:text-blue-700 font-semibold flex items-center gap-1 transition-colors">
+                            <span class="text-lg">+</span> See More
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="bg-gradient-to-br from-white to-amber-50 backdrop-blur-md rounded-2xl shadow-2xl overflow-hidden transform transition-all duration-300 hover:-translate-y-2 hover:shadow-3xl border border-gray-200">
+                <div class="p-3">
+                    <div class="w-full h-48 rounded-xl overflow-hidden">
+                        <img src="photo/9.jpg" alt="ছবি ৩" class="w-full h-full object-cover w-full h-full object-cover card-image">
+                    </div>
+                </div>
+                <div class="px-5 pb-5">
+                    <h3 class="text-xl font-bold text-gray-800 mb-2">The Golden Crossing at Day's End</h3>
+                    <div class="relative">
+                        <p class="text-gray-700 text-sm leading-relaxed transition-all duration-300" id="text9">
+                          An intensely beautiful sunset dominates the scene, bathing the entire landscape in a rich, warm palette of fiery orange. The low-hanging sun, a perfect white-hot circle, casts a brilliant light over a tranquil body of water, whose surface flawlessly reflects the blazing sky and the wooden bridge. Two figures, likely a parent and child, walk with quiet purpose across the simple, rustic bamboo bridge that spans the water, their silhouettes sharply defined against the light. The bridge itself is a metaphor for the journey of life, linking one moment to the next. This image evokes a powerful sense of timelessness and connection—the shared journey at the close of the day, set against the breathtaking, ephemeral glory of a tropical twilight.
+                        </p>
+                        <button onclick="toggleText('text9', 'btn9')" id="btn9" class="mt-2 text-rose-600 hover:text-rose-700 font-semibold flex items-center gap-1 transition-colors">
+                            <span class="text-lg">+</span> See More
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    
+</section>
+
+<!-- dhgudhfhf -->
+
+
+<!-- Overlapping Cards Section -->
+<div class="max-w-[100%] mx-auto px-4 mt-16 relative overflow-x-auto">
+    
+    <!-- Top Card (Smaller, Overlapping) - Half visible -->
+  <div class="relative z-10 w-[85%] md:w-[80%] mx-auto bg-gradient-to-br from-pink-200 via-purple-200 to-blue-300 rounded-3xl shadow-2xl p-5 md:p-8 mb-[-150px] md:mb-[-140px]">
+        <!-- Profile Image -->
+        <div class="flex justify-center mb-4">
+            <div class="w-16 h-16 md:w-24 md:h-24 rounded-full bg-white shadow-lg overflow-hidden border-4 border-white">
+                <img src="photo/profile.jpg" alt="Profile" class="w-full h-full object-cover">
+            </div>
+        </div>
+        
+        <!-- Caption -->
+        <h3 class="text-2xl md:text-3xl font-bold text-gray-900 text-center mb-3" style="font-family: 'Georgia', serif;"> The Soul of Rural Bengal</h3>
+        
+        <!-- Description -->
+        <p class="text-gray-800 text-sm md:text-base leading-relaxed text-center" style="font-family: 'Arial', sans-serif;">
+          
+
+
+Rural Bengal is not just a place — it’s a feeling that breathes through green paddy fields, quiet rivers, and the laughter of village children. The mornings begin with the rhythm of life, and every sunset tells a story of peace and simplicity.
+        </p>
+    </div>
+
+    <!-- Bottom Card (Larger) -->
+   <div class="bg-gradient-to-br from-yellow-100 via-yellow-200 to-amber-200
+    rounded-3xl shadow-2xl p-10 md:p-12 pt-32 md:pt-44">
+        
+        <p class="text-gray-700 text-lg md:text-xl leading-relaxed text-center max-w-6xl mx-auto" style="font-family: 'Arial', sans-serif;">
+           Here, time moves slowly, allowing nature and people to live in perfect harmony. The scent of fresh soil after rain, the sound of a boat gliding across the river, and the golden hue of ripened crops together create a world untouched by haste. In this land, beauty lies not in wealth, but in warmth — in the pure heart of rural life.
+        </p>
+    </div>
+
+</div>
+
+
+
+
+    <script src="js/main.js"></script>
+
+<!-- Image Modal -->
+<div id="imageModal" class="hidden fixed inset-0 bg-black/80 z-[9999] flex items-center justify-center p-4" onclick="closeModal()">
+    <button class="absolute top-4 right-4 text-white text-4xl hover:text-gray-300">&times;</button>
+    <img id="modalImage" src="" alt="" class="max-w-full max-h-full rounded-xl" onclick="event.stopPropagation()">
+</div>
+
+</body>
+</html>
