@@ -95,7 +95,7 @@ function typeWriter(element, text, speed, callback) {
         if (i < text.length) {
             element.textContent += text.charAt(i);
             i++;
-            setTimeout(type, speed);
+            setTimeout(type, 15);
         } else if (callback) {
             callback();
         }
@@ -199,8 +199,10 @@ function toggleCard(cardId, contentId) {
 
 // Photo Slider
 let currentImageIndex = 0;
-const images = ['photo/aa1.jpg', 'photo/aa2.jpg', 'photo/aa3.jpg'];
+const images = ['photo/aa1.jpg', 'photo/aa2.jpg', 'photo/aa3.jpg' ,];
 let autoSlideInterval;
+
+
 
 function nextImage() {
     currentImageIndex = (currentImageIndex + 1) % images.length;
@@ -240,4 +242,112 @@ function startAutoSlide() {
 // Initialize slider when page loads
 if (document.getElementById('sliderImage')) {
     startAutoSlide();
+}
+
+
+
+// dsjfjjf
+
+
+
+
+
+
+// kjffhjh
+
+
+// Photo Slider with 10 images
+let currentSlideIndex = 0;
+const slideImages = [
+    'photo/s1.jpg',
+    'photo/s2.jpg', 
+    'photo/s3.jpg',
+    'photo/s4.jpg',
+    'photo/s5.jpg',
+    'photo/s6.jpg',
+    'photo/s7.jpg',
+    'photo/s8.jpg',
+    'photo/s9.jpg',
+    'photo/s10.jpg'
+];
+let autoSlideTimer;
+
+function nextSlide() {
+    currentSlideIndex = (currentSlideIndex + 1) % slideImages.length;
+    updateSlide();
+    resetAutoSlide();
+}
+
+function prevSlide() {
+    currentSlideIndex = (currentSlideIndex - 1 + slideImages.length) % slideImages.length;
+    updateSlide();
+    resetAutoSlide();
+}
+
+function updateSlide() {
+    const mainImage = document.getElementById('mainSliderImage');
+    const indicators = document.querySelectorAll('.slide-indicator');
+    const counter = document.getElementById('currentSlide');
+    
+    if (mainImage) {
+        mainImage.src = slideImages[currentSlideIndex];
+        
+        // Update indicators
+        indicators.forEach((indicator, index) => {
+            if (index === currentSlideIndex) {
+                indicator.classList.remove('bg-gray-400');
+                indicator.classList.add('bg-gray-800');
+            } else {
+                indicator.classList.remove('bg-gray-800');
+                indicator.classList.add('bg-gray-400');
+            }
+        });
+        
+        // Update counter
+        if (counter) {
+            counter.textContent = currentSlideIndex + 1;
+        }
+    }
+}
+
+function startAutoSlide() {
+    autoSlideTimer = setInterval(nextSlide, 3000);
+}
+
+function resetAutoSlide() {
+    clearInterval(autoSlideTimer);
+    startAutoSlide();
+}
+
+// Initialize slider when page loads
+if (document.getElementById('mainSliderImage')) {
+    startAutoSlide();
+}
+
+// ifjhj
+
+
+function revealText() {
+    const element = document.getElementById('typingText');
+    if (element) {
+        const fullText = element.textContent;
+        element.textContent = '';
+        element.classList.remove('hidden');
+        
+        let i = 0;
+        function type() {
+            if (i < fullText.length) {
+                element.textContent += fullText.charAt(i);
+                i++;
+                setTimeout(type, 10); // 25ms per character (adjust for speed)
+            }
+        }
+        type();
+    }
+}
+
+if (document.getElementById('typingText')) {
+    window.addEventListener('load', function() {
+        setTimeout(revealText, 500);
+    });
 }

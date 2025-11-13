@@ -53,6 +53,28 @@
     overflow-y: auto;
 }
 
+
+
+
+
+@keyframes pulse {
+    0%, 100% {
+        opacity: 0.3;
+        transform: scale(1);
+    }
+    50% {
+        opacity: 0.5;
+        transform: scale(1.1);
+    }
+}
+
+.animate-pulse {
+    animation: pulse 4s ease-in-out infinite;
+}
+
+
+
+
     </style>
 </head>
 
@@ -124,8 +146,7 @@
         </div>
     </div>
 
-    <!-- Page Content -->
-  
+   
 
 <!-- Content Section -->
 <div class="max-w-[92%] mx-auto mt-8">
@@ -176,11 +197,7 @@
     </div>
 </div>
 
-<!-- part2 -->
 
-
-
-<!-- Background Image Section -->
 
 
 <div class="text-center mb-12 mt-6">
@@ -400,8 +417,6 @@
     
 </section>
 
-<!-- dhgudhfhf -->
-
 
 <!-- Overlapping Cards Section -->
 <div class="max-w-[100%] mx-auto px-4 mt-16 relative overflow-x-auto">
@@ -441,6 +456,171 @@ Rural Bengal is not just a place — it’s a feeling that breathes through gree
 
 
 
+
+
+
+
+<div class="text-center mb-12 mt-6">
+        <h2 class="text-4xl font-bold text-gray-900 mb-4" style="font-family: 'Georgia', 'Times New Roman', serif;">Beauty of Rural Bengal and the Charm of Winter</h2>
+        <p class="text-gray-500 text-lg max-w-6xl mx-auto" style="font-family: 'Arial', sans-serif;">
+   The serene villages of Bengal come alive with the rhythm of nature.
+From golden paddy fields to mist-covered roads, every scene tells a story of peace and simplicity.
+The cool winter mornings, farmers at work, and the rising sun together paint a timeless portrait of rural beauty.
+
+
+        </p>
+    </div>
+
+
+<!-- video -->
+<section class="container mx-auto w-[100%] max-w-screen-2xl py-8">
+  <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+
+    <!-- 1 -->
+    <div class="bg-white rounded-xl shadow-sm overflow-hidden">
+      <video class="w-full h-56 object-cover" controls>
+        <source src="photo/v1.mp4" type="video/mp4">
+        
+      </video>
+      <p class="p-2 text-sm text-gray-700 text-center">A glimpse of everyday rural life — farmers plowing, cattle walking, and the fields alive with work.</p>
+    </div>
+
+    <!-- 2 -->
+    <div class="bg-white rounded-xl shadow-sm overflow-hidden">
+      <video class="w-full h-56 object-cover" controls>
+        <source src="photo/v2.mp4" type="video/mp4">
+       
+      </video>
+      <p class="p-2 text-sm text-gray-700 text-center"> A bright morning sun over the village road, with lush paddy fields and tall trees on both sides.
+
+ </p>
+    </div>
+
+    <!--3 -->
+    <div class="bg-white rounded-xl shadow-sm overflow-hidden">
+      <video class="w-full h-56 object-cover" controls>
+        <source src="photo/v3.mp4" type="video/mp4">
+        
+      </video>
+      <p class="p-2 text-sm text-gray-700 text-center">A farmer preparing the date palm trees to collect sweet winter sap.
+
+</p>
+    </div>
+
+    <!-- 4 -->
+    <div class="bg-white rounded-xl shadow-sm overflow-hidden">
+      <video class="w-full h-56 object-cover" controls>
+        <source src="photo/v4.mp4" type="video/mp4">
+      
+      </video>
+      <p class="p-2 text-sm text-gray-700 text-center">A foggy village road surrounded by rice fields, with the faint sun rising through the mist.
+
+</p>
+    </div>
+
+    <!-- 5-->
+    <div class="bg-white rounded-xl shadow-sm overflow-hidden">
+      <video class="w-full h-56 object-cover" controls>
+        <source src="photo/v5.mp4" type="video/mp4">
+        
+      </video>
+      <p class="p-2 text-sm text-gray-700 text-center">Close view of dewy rice plants glowing as the morning sun peeks through.
+
+</p>
+    </div>
+
+    <!--6-->
+    <div class="bg-white rounded-xl shadow-sm overflow-hidden">
+      <video class="w-full h-56 object-cover" controls>
+        <source src="photo/v6.mp4" type="video/mp4">
+        
+      </video>
+      <p class="p-2 text-sm text-gray-700 text-center">A clear sky, green fields, and a bright sun over a peaceful rural road</p>
+    </div>
+
+  </div>
+</section>
+
+
+
+
+
+<!-- Photo Slider Section -->
+<div class="max-w-[92%] mx-auto mt-16 mb-16  overflow-x-hidden">
+    <h3 class="text-3xl md:text-2xl font-bold text-center text-gray-900 mb-10" style="font-family: 'Georgia', serif;">Take a glimpse of more scenes from the village</h3>
+    
+    <div class="relative max-w-4xl mx-auto">
+        
+        <!-- Main Image Container -->
+       <div class="border-2 border-gray-300 rounded-2xl shadow-2xl overflow-hidden bg-white">
+    <img id="mainSliderImage" src="photo/s1.jpg" alt="Slider Photo" class="w-full h-[400px] md:h-[500px] object-cover transition-all duration-500">
+</div>
+        
+        <!-- Left Arrow -->
+        <button onclick="prevSlide()" class="absolute left-[-50px] md:left-[-60px] top-1/2 transform -translate-y-1/2 bg-white hover:bg-gray-100 text-gray-800 rounded-full p-3 md:p-4 shadow-xl transition-all duration-300 hover:scale-110">
+            <svg class="w-6 h-6 md:w-7 md:h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path>
+            </svg>
+        </button>
+        
+        <!-- Right Arrow -->
+        <button onclick="nextSlide()" class="absolute right-[-50px] md:right-[-60px] top-1/2 transform -translate-y-1/2 bg-white hover:bg-gray-100 text-gray-800 rounded-full p-3 md:p-4 shadow-xl transition-all duration-300 hover:scale-110">
+            <svg class="w-6 h-6 md:w-7 md:h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+            </svg>
+        </button>
+        
+        <!-- Slide Indicators -->
+        <div class="flex justify-center gap-2 mt-6">
+            <span class="slide-indicator w-2 h-2 md:w-3 md:h-3 rounded-full bg-gray-800 transition-all duration-300"></span>
+            <span class="slide-indicator w-2 h-2 md:w-3 md:h-3 rounded-full bg-gray-400 transition-all duration-300"></span>
+            <span class="slide-indicator w-2 h-2 md:w-3 md:h-3 rounded-full bg-gray-400 transition-all duration-300"></span>
+            <span class="slide-indicator w-2 h-2 md:w-3 md:h-3 rounded-full bg-gray-400 transition-all duration-300"></span>
+            <span class="slide-indicator w-2 h-2 md:w-3 md:h-3 rounded-full bg-gray-400 transition-all duration-300"></span>
+            <span class="slide-indicator w-2 h-2 md:w-3 md:h-3 rounded-full bg-gray-400 transition-all duration-300"></span>
+            <span class="slide-indicator w-2 h-2 md:w-3 md:h-3 rounded-full bg-gray-400 transition-all duration-300"></span>
+            <span class="slide-indicator w-2 h-2 md:w-3 md:h-3 rounded-full bg-gray-400 transition-all duration-300"></span>
+            <span class="slide-indicator w-2 h-2 md:w-3 md:h-3 rounded-full bg-gray-400 transition-all duration-300"></span>
+            <span class="slide-indicator w-2 h-2 md:w-3 md:h-3 rounded-full bg-gray-400 transition-all duration-300"></span>
+        </div>
+        
+        
+        
+    </div>
+</div>
+
+
+
+<!-- Typing Text Section -->
+<div class="max-w-[92%] mx-auto mt-12 mb-16 px-4 overflow-x-hidden">
+    
+    <!-- Heading -->
+    <h2 class="text-3xl md:text-4xl font-bold text-center text-gray-900 mb-4" style="font-family: 'Georgia', serif;"> The Soul of Rural Bengal - Where Life Breathes in Simplicity </h2>
+    
+    <!-- Typing Paragraph -->
+    <div class="max-w-12xl mx-auto overflow-x-hidden">
+       
+<p id="typingText" class="text-gray-800 text-lg md:text-xl leading-loose text-left hidden" style="font-family: 'Georgia', serif; white-space: pre-wrap;">
+Rural Bengal stands as a living poem of nature — a land where simplicity becomes a way of life. Here, the rhythm of existence follows the soft whisper of the wind through paddy fields and the songs of birds at dawn. Men and women rise early, their faces calm and their hearts filled with quiet determination. They walk along narrow earthen roads shaded by trees, heading toward fields that have fed generations.In every smile lies honesty; in every gesture, humility.The farmer’s plow and the weaver’s loom are symbols of dignity, not struggle.Life unfolds slowly, in harmony with the seasons — rain greets the earth like an old friend, and winter wraps the village in a soft mist. Children run barefoot through meadows, laughter echoing across the open sky. The ponds mirror golden sunsets, and the fragrance of fresh soil fills the air after rain.Festivals here are not just celebrations; they are reflections of gratitude and togetherness.
+Neighbors share what little they have, bound by a spirit of unity unseen in crowded cities.Unlike the restless rush of urban life, the village moves with a peaceful grace.There are no tall buildings, yet the horizon feels endless; no traffic, yet hearts travel freely.People speak gently, live modestly, and dream deeply.Their lives may seem simple, but their hearts carry an ancient wisdom — the wisdom of contentment.In the calm of dusk, as smoke rises from kitchen fires and the call to prayer drifts through the air, one feels the essence of belonging.
+This is rural Bengal — where culture is lived, not performed; where nature is not scenery, but family.It is a world that teaches patience, gratitude, and truth — values often forgotten beyond its borders.To understand this land is to rediscover the meaning of peace.The beauty of Bengal’s villages is not just in what you see, but in what you feel — a harmony between man, soil, and soul.And in that harmony, life becomes pure again.
+</p>
+
+    </div>
+    
+</div>
+
+
+
+<div class="w-full mt-16 mb-0 px-0 ">
+    <div class="max-w-[80%] mx-auto border-4 border-white shadow-2xl overflow-hidden">
+        <img src="photo/hoday.jpg" alt="Footer Photo" class="w-full h-auto object-contain">
+    </div>
+</div>
+
+
+
+
     <script src="js/main.js"></script>
 
 <!-- Image Modal -->
@@ -449,5 +629,105 @@ Rural Bengal is not just a place — it’s a feeling that breathes through gree
     <img id="modalImage" src="" alt="" class="max-w-full max-h-full rounded-xl" onclick="event.stopPropagation()">
 </div>
 
+
+
+<!-- Footer Section -->
+<footer class="w-full bg-gradient-to-br from-gray-900 via-gray-800 to-black relative overflow-hidden mt-20">
+    
+    <!-- Animated Background Lights -->
+    <div class="absolute inset-0 overflow-hidden">
+        <div class="absolute w-96 h-96 bg-purple-500/20 rounded-full blur-3xl -top-48 -left-48 animate-pulse"></div>
+        <div class="absolute w-96 h-96 bg-blue-500/20 rounded-full blur-3xl -bottom-48 -right-48 animate-pulse" style="animation-delay: 1s;"></div>
+        <div class="absolute w-96 h-96 bg-pink-500/20 rounded-full blur-3xl top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 animate-pulse" style="animation-delay: 2s;"></div>
+        <div class="absolute w-80 h-80 bg-cyan-400/15 rounded-full blur-3xl top-20 right-20 animate-pulse" style="animation-delay: 3s;"></div>
+    </div>
+    
+    <!-- Footer Content -->
+    <div class="relative z-10 px-6 py-16">
+        
+        <!-- Heading -->
+        <div class="text-center mb-12">
+            <h2 class="text-4xl md:text-5xl font-bold text-white mb-2" style="font-family: 'Georgia', serif;">Contact Us</h2>
+            <div class="w-24 h-1 bg-gradient-to-r from-purple-500 via-pink-500 to-blue-500 mx-auto rounded-full"></div>
+        </div>
+        
+        <!-- Contact Information -->
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-8 mb-12 max-w-7xl mx-auto">
+            
+            <!-- WhatsApp -->
+            <a href="https://wa.me/+8801318133422" target="_blank" class="group bg-white/5 backdrop-blur-md hover:bg-white/10 rounded-2xl p-8 transition-all duration-300 transform hover:scale-105 hover:shadow-2xl border border-white/10 hover:border-purple-500/50">
+                <div class="flex flex-col items-center text-center space-y-4">
+                    <!-- WhatsApp Icon -->
+                    <div class="w-16 h-16 bg-gradient-to-br from-purple-500/20 to-pink-500/20 rounded-full flex items-center justify-center group-hover:from-purple-500/30 group-hover:to-pink-500/30 transition-all shadow-lg shadow-purple-500/30">
+                        <svg class="w-8 h-8 text-purple-400 group-hover:text-purple-300" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+                        </svg>
+                    </div>
+                    <div>
+                        <h3 class="text-white font-bold text-xl mb-2">WhatsApp</h3>
+                        <p class="text-gray-300 text-lg">+880 1318133422</p>
+                    </div>
+                </div>
+            </a>
+            
+            <!-- Email -->
+            <a href="mailto:sharifurrahmanabid@gmail.com" class="group bg-white/5 backdrop-blur-md hover:bg-white/10 rounded-2xl p-8 transition-all duration-300 transform hover:scale-105 hover:shadow-2xl border border-white/10 hover:border-blue-500/50">
+                <div class="flex flex-col items-center text-center space-y-4">
+                    <!-- Email Icon -->
+                    <div class="w-16 h-16 bg-gradient-to-br from-blue-500/20 to-cyan-500/20 rounded-full flex items-center justify-center group-hover:from-blue-500/30 group-hover:to-cyan-500/30 transition-all shadow-lg shadow-blue-500/30">
+                        <svg class="w-8 h-8 text-blue-400 group-hover:text-blue-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
+                        </svg>
+                    </div>
+                    <div>
+                        <h3 class="text-white font-bold text-xl mb-2">Email</h3>
+                        <p class="text-gray-300 text-lg">sharifurrahmanabid@gmail.com</p>
+                    </div>
+                </div>
+            </a>
+            
+            <!-- Address -->
+            <div class="group bg-white/5 backdrop-blur-md hover:bg-white/10 rounded-2xl p-8 transition-all duration-300 transform hover:scale-105 hover:shadow-2xl border border-white/10 hover:border-pink-500/50">
+                <div class="flex flex-col items-center text-center space-y-4">
+                    <!-- Location Icon -->
+                    <div class="w-16 h-16 bg-gradient-to-br from-pink-500/20 to-rose-500/20 rounded-full flex items-center justify-center group-hover:from-pink-500/30 group-hover:to-rose-500/30 transition-all shadow-lg shadow-pink-500/30">
+                        <svg class="w-8 h-8 text-pink-400 group-hover:text-pink-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path>
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
+                        </svg>
+                    </div>
+                    <div>
+                        <h3 class="text-white font-bold text-xl mb-2">Address</h3>
+                        <p class="text-gray-300 text-lg"> Dhaka <br> Bangladesh</p>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+        
+        <!-- Divider -->
+        <div class="border-t border-white/10 pt-8">
+            <p class="text-gray-400 text-center text-sm md:text-base">
+                Thank you for visiting our Website 
+            </p>
+        </div>
+        
+    </div>
+    
+</footer>
+
+
+
+
 </body>
+
+
+
+
+
+
 </html>
+
+
+
+
